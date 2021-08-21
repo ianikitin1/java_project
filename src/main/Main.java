@@ -1,17 +1,12 @@
 package main;
 
 import main.lab_1.task_1.*;
+import main.lab_1.task_2.Triangle;
 
 public class Main {
 
     public static void main(String[] args) {
-        /*
-        lab1.task1
-        remainder(1, 3) ➞ 1
-        remainder(3, 4) ➞ 3
-        remainder(-9, 45) ➞ -9
-        remainder(5, 5) ➞ 0
-         */
+/* l1.t1
         Calculator calc = new Calculator();
         System.out.println("Введите первое число: ");
         calc.inputSetA();
@@ -19,6 +14,13 @@ public class Main {
         calc.inputSetB();
         System.out.println("Остаток деления первого на второе: " + calc.getReminder(calc.getA(), calc.getB()));
         calc.setA(1);
-
+*/
+        Triangle tria = new Triangle();
+        System.out.println("Введите основание и высоту треугольника: ");
+        tria.inputSetA();
+        tria.inputSetH();
+        System.out.println("Площадь треугольника = " + tria.getArea(tria.getA(), tria.getH()));
     }
+
+
 }

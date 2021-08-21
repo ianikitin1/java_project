@@ -1,9 +1,6 @@
 package main.lab_1.task_1;
 
-import static org.testng.Assert.*;
-import main.lab_1.task_1.*;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class CalculatorTest {
