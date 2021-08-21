@@ -1,4 +1,4 @@
-package lab_1.task_1;
+package main.lab_1.task_1;
 
 import java.io.*;
 
@@ -9,40 +9,43 @@ public class Calculator {
     private int c;
     BufferedReader input =  new BufferedReader(new InputStreamReader(System.in));
 
-    public void setA() {
-        try {
-            a = Integer.parseInt(input.readLine());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
+    public void setA(int a) { this.a = a; }
     public int getA() {
         return a;
     }
 
-    public void setB() {
-        try {
-            b = Integer.parseInt(input.readLine());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    public int getB() {
-        return b;
+    public void setB(int b) { this.b = b; }
+    public int getB() { return b; }
+
+    public void setC(int c) { this.c = c; }
+    public int getC() {
+        return c;
     }
 
-    public void setC() {
+    //set методы с вводом пользователем
+    public void inputSetC() {
         try {
             c = Integer.parseInt(input.readLine());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public int getC() {
-        return c;
+
+    public void inputSetB() {
+        try {
+            b = Integer.parseInt(input.readLine());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
+    public void inputSetA() {
+        try {
+            a = Integer.parseInt(input.readLine());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public int getReminder(int a, int b) {
         return a % b;
