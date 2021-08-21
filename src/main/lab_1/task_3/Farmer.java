@@ -3,8 +3,8 @@ package main.lab_1.task_3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.security.PublicKey;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Farmer {
 
@@ -13,7 +13,7 @@ public class Farmer {
     Animal cow = new Cow();
     Animal pig = new Pig();
 
-    ArrayList<Animal> listOfAnimal= new ArrayList();
+    ArrayList<Animal> listOfAnimal= new ArrayList<Animal>();
 
     public void countAnimals() throws IOException {
         try {
@@ -36,7 +36,7 @@ public class Farmer {
     public int countAnimalsLegs() throws IOException {
         int totalLegs = 0;
         countAnimals();
-        System.out.println("длина списка животинок: " + listOfAnimal.size());
+        //System.out.println("длина списка животинок: " + listOfAnimal.size());
         for (Animal animal : listOfAnimal) totalLegs += animal.getLegs() * animal.getCount();
         return totalLegs;
     }
