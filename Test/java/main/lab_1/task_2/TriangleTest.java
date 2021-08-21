@@ -3,13 +3,6 @@ package main.lab_1.task_2;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
-/*
-triArea(3, 2) ➞ 3
-triArea(7, 4) ➞ 14
-triArea(10, 10) ➞ 50
-
-*/
 public class TriangleTest {
     Triangle tria = new Triangle();
     @Test
