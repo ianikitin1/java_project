@@ -72,6 +72,4 @@ public class FarmerTest {
         Farmer farmer = new Farmer();
         Assert.assertNotEquals(50, farmer.countAnimalsLegs());
     }
-
-
 }

@@ -51,5 +51,23 @@ public class Calculator {
         return a % b;
     }
 
+    public String checkOperation(int n, int a, int b){
+        if(n == a + b) {
+            return "addded";
+        }
+        else if (n == a - b) {
+            return "subtracted";
+        }
+        else if (n == a * b) {
+            return "multiply";
+        }
+        else if (n == a / b) {
+            return "divided";
+        }
+        else {
+            return "none";
+        }
+    }
+
 
 }
