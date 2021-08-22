@@ -1,9 +1,11 @@
 package main;
 
+import javafx.css.converter.DeriveColorConverter;
 import main.lab_1.task_1.*;
 import main.lab_1.task_2.Triangle;
 import main.lab_1.task_3.Farmer;
 import main.lab_1.task_4.Casino;
+import main.lab_1.task_6.Determinant;
 
 import java.io.IOException;
 
@@ -38,11 +40,16 @@ l1.t4
         System.out.println(String.valueOf(casino.profitableGamble(0.2, 50, 9)));
 
 
-*/
+l1.t5
         Calculator calculator = new Calculator();
         System.out.println(calculator.checkOperation(24, 15, 9));
         System.out.println(calculator.checkOperation(24, 26, 2));
         System.out.println(calculator.checkOperation(15, 11, 11));
-    }
 
+*/
+
+        Determinant determinant = new Determinant();
+        System.out.println(String.valueOf(determinant.ctoa('A')));
+
+    }
 }
