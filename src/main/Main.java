@@ -38,10 +38,6 @@ l1.t4
         System.out.println(String.valueOf(casino.profitableGamble(0.2, 50, 9)));
 
 
-operation(24, 15, 9) ➞ "added"
-operation(24, 26, 2) ➞ "subtracted"
-operation(15, 11, 11) ➞ "none"
-
 */
         Calculator calculator = new Calculator();
         System.out.println(calculator.checkOperation(24, 15, 9));

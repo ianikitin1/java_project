@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 public class CalculatorTest {
         Calculator calc = new Calculator();
+        //Тесты к таску 1
         @Test
         public void checkReminder1(){
                 Assert.assertEquals(1, calc.getReminder(1, 3));
@@ -29,5 +30,41 @@ public class CalculatorTest {
         public void checkRem5() {
                 Assert.assertNotEquals(5, calc.getReminder(5, 3));
         }
+
+
+        //Тесты к таску 5
+        @Test
+        public void testCheckOperation_1() {
+                Assert.assertEquals("added", calc.checkOperation(24, 15, 9));
+        }
+
+        @Test
+        public void testCheckOperation_2() {
+                Assert.assertEquals("subtracted", calc.checkOperation(24, 26, 2));
+        }
+
+        @Test
+        public void testCheckOperation_3() {
+                Assert.assertEquals("multiply", calc.checkOperation(24, 6, 4));
+        }
+
+        @Test
+        public void testCheckOperation_4() {
+                Assert.assertEquals("divided", calc.checkOperation(24, 48, 2));
+        }
+
+        @Test
+        public void testCheckOperation_5() {
+                Assert.assertEquals("none", calc.checkOperation(15, 11, 11));
+        }
+
+        /*AssertionError
+        @Test
+        public void testCheckOperation_6() {
+                Assert.assertEquals("divided", calc.checkOperation(24, 48, 15));
+        }
+        */
+
+
 
 }

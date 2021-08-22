@@ -53,7 +53,7 @@ public class Calculator {
 
     public String checkOperation(int n, int a, int b){
         if(n == a + b) {
-            return "addded";
+            return "added";
         }
         else if (n == a - b) {
             return "subtracted";

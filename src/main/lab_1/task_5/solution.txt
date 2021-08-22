@@ -1,1 +1,1 @@
-Решение: функция добавлена в класс Calculator таск_1
+Решение: функция (checkOperation(int n, int a, int b)) добавлена в класс Calculator таск_1
