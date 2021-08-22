@@ -63,8 +63,24 @@ public class CalculatorTest {
         public void testCheckOperation_6() {
                 Assert.assertEquals("divided", calc.checkOperation(24, 48, 15));
         }
-        */
 
+        */
+        @Test
+        public void testAddToUpp_1(){
+               Assert.assertEquals(6, calc.addUpTo(3));
+        }
+        @Test
+        public void testAddToUpp_2(){
+                Assert.assertEquals(55,  calc.addUpTo(10));
+        }
+        @Test
+        public void testAddToUpp_3(){
+                Assert.assertEquals(28, calc.addUpTo(7));
+        }
+        @Test
+        public void testAddToUpp_4(){
+                Assert.assertNotEquals(64.1, calc.addUpTo(90));
+        }
 
 
 }

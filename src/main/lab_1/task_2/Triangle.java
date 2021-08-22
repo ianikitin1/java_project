@@ -63,4 +63,7 @@ public class Triangle {
         }
     }
 
+    public int nextEdge(int a, int b){
+        return a + b - 1;
+    }
 }

@@ -69,5 +69,9 @@ public class Calculator {
         }
     }
 
+    public double addUpTo(int a) {
+        return (1 + a) * a / 2.0;
+    }
+
 
 }

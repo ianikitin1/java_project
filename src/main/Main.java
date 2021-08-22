@@ -8,6 +8,7 @@ import main.lab_1.task_4.Casino;
 import main.lab_1.task_6.Determinant;
 
 import java.io.IOException;
+import java.io.StringReader;
 
 public class Main {
 
@@ -46,10 +47,20 @@ l1.t5
         System.out.println(calculator.checkOperation(24, 26, 2));
         System.out.println(calculator.checkOperation(15, 11, 11));
 
-*/
+
 
         Determinant determinant = new Determinant();
         System.out.println(String.valueOf(determinant.ctoa('A')));
+
+
+
+        Calculator calculator = new Calculator();
+        System.out.println(String.valueOf(calculator.addUpTo(3)));
+
+
+*/
+        Triangle triangle = new Triangle();
+        System.out.println(String.valueOf(triangle.nextEdge(8, 10)));
 
     }
 }
