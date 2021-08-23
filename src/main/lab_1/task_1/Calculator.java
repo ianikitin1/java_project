@@ -1,13 +1,16 @@
 package main.lab_1.task_1;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class Calculator {
 
     private int a;
     private int b;
     private int c;
-    BufferedReader input =  new BufferedReader(new InputStreamReader(System.in));
+    private BufferedReader input =  new BufferedReader(new InputStreamReader(System.in));
+
+    private ArrayList<Integer> array = new ArrayList<Integer>();
 
     public void setA(int a) { this.a = a; }
     public int getA() {
@@ -20,6 +23,16 @@ public class Calculator {
     public void setC(int c) { this.c = c; }
     public int getC() {
         return c;
+    }
+
+    public void setArray(ArrayList<Integer> array) { this.array = array; }
+    public ArrayList<Integer> getArray() {
+        return array;
+    }
+
+    public void setInput(BufferedReader input) { this.input = input; }
+    public BufferedReader getInput() {
+        return input;
     }
 
     //set методы с вводом значений пользователем
@@ -46,7 +59,15 @@ public class Calculator {
             e.printStackTrace();
         }
     }
-
+    
+    public void inputSetArray() {
+        try {
+            String number = input.readLine();
+            array.add(Integer.parseInt(number));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public int getReminder(int a, int b) {
         return a % b;
     }
@@ -73,5 +94,12 @@ public class Calculator {
         return (1 + a) * a / 2.0;
     }
 
+    public double sumOfCubes(ArrayList<Integer> array){
+        double cubes = 0;
+        for (Integer integer : array) {
+            cubes += Math.pow(Double.valueOf(integer), 3);
+        }
+        return cubes;
+    }
 
 }

@@ -1,0 +1,1 @@
+Решение: функция (sumOfCubes(ArrayList<Integer> array)) добавлена в класс Triangle (таск_2)
