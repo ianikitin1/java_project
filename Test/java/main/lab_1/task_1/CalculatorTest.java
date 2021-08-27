@@ -163,4 +163,15 @@ public class CalculatorTest {
                 Assert.assertNotEquals(7886556.9, calculator.sumOfCubes(calculator.getArray()));
         }
 
+
+        //Тесты к таску 10
+        @Test
+        public void testAbcMath_1(){
+                Calculator calculator = new Calculator();
+                Assert.assertFalse(calculator.abcmath(42,5, 10));
+                Assert.assertTrue(calculator.abcmath(5,2, 1));
+                Assert.assertFalse(calculator.abcmath(1,2, 3));
+        }
+
+
 }

@@ -1,0 +1,1 @@
+Решение: функция (abcmath(int a, int b, int c)) добавлена в класс Calculator (таск_1)

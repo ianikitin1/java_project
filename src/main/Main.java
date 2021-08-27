@@ -1,16 +1,17 @@
 package main;
 
-import javafx.css.converter.DeriveColorConverter;
-import main.lab_1.task_1.*;
+
+
+import main.lab_1.task_1.Calculator;
 import main.lab_1.task_2.Triangle;
 import main.lab_1.task_3.Farmer;
 import main.lab_1.task_4.Casino;
 import main.lab_1.task_6.Determinant;
+import main.lab_2.task_1.Repeater;
 
-import java.io.BufferedReader;
+import javax.print.DocFlavor;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
+import java.io.InputStream;
 import java.util.Objects;
 
 public class Main {
@@ -66,7 +67,7 @@ l1.t8
         System.out.println(String.valueOf(triangle.nextEdge(8, 10)));
 
 
-l1.t9*/
+l1.t9
         Calculator calculator = new Calculator();
         do{
             System.out.print("Введите число: ");
@@ -78,7 +79,22 @@ l1.t9*/
         System.out.println("Сумма кубов введенных цифр: " + calculator.sumOfCubes(calculator.getArray()));
 
 
+l1.t10
+        Calculator calculator = new Calculator();
+        System.out.println(calculator.abcmath(42,5, 10));
+        System.out.println(calculator.abcmath(5,2, 1));
+        System.out.println(calculator.abcmath(1,2, 3));
 
+
+l2.t1
+*/
+        Repeater repeater = new Repeater();
+        //System.out.println(repeater.repeat("tra-ta-ta", 4));
+        System.out.println("Введите слово: ");
+        repeater.setInputString();
+        System.out.println("Сколько раз повторить буквы: ");
+        repeater.setTimes();
+        System.out.println(repeater.repeat(repeater.getInputString(), repeater.getTimes()));
 
     }
 

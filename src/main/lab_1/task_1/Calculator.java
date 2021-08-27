@@ -102,4 +102,15 @@ public class Calculator {
         return cubes;
     }
 
+    public boolean abcmath(int a, int b, int c){
+        boolean divide = false;
+        for(int i=0; i<b; i++) {
+            a+=a;
+        }
+        if(a % c == 0)
+            divide = true;
+        return divide;
+    }
+
+
 }
